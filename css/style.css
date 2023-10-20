@@ -310,6 +310,7 @@ footer a {
     }
     #blog {
         margin: 100px 0;
+        font-size: 12px;
     }
 }
 
@@ -351,8 +352,8 @@ footer a {
     .container {
         padding: 0 !important;
     }
-    #home, #about,  #project{
-        min-height:fit-content !important;
+    #home, #about {
+        min-height: 40vh;
         width: 100vw;
     }
 
@@ -402,7 +403,9 @@ footer a {
     }
 
     /* PROJECT */
-
+    #project {
+        min-height: 50vh;
+    }
     .project-form{
         padding: 20px;
         width: 100vw;
@@ -418,6 +421,19 @@ footer a {
     }
     .project-content h1 {
         text-align: center;
+    }
+    .progressContainer i {
+        font-size: 25px;
+        margin-bottom: 5px;
+        color: inherit;
+    }
+    .progressContainer span{
+        font-size: 15px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 100;
+    }
+    .progress {
+        height: 20px !important;
     }
 
 }
