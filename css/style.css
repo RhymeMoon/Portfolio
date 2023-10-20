@@ -390,8 +390,9 @@ footer a {
         display: none;
     }
     #skills {
+        min-height: fit-content !important;
         width: 100% !important;
-        padding: 0;
+        padding: 0 ;
     }
     .skills-content {
         padding: 0;
