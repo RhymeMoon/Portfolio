@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Cedarville+Cursive');
+* {
+    font-family: 'Tilt Neon';
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background: url("https://janschreiber.github.io/img2/black-chalk.jpg"); */
+    height: auto;
+    position: relative;
+}
+
+/************************ NAVIGATION BAR *********************************/
+.navbar {
+    height: fit-content;
+    width: 100%;
+    background-image: linear-gradient(rgba(82, 82, 82, 0.674),#1a1a1a81);
+    box-shadow: 0 0 8px black;
+    position: fixed !important;
+    top: 0;
+    z-index: 99;
+}
+.navbar-brand img {
+    width: auto;
+    height: 50px;
+    margin-left: 20px;
+}
+.navbar-brand img:hover {
+    transform:scale(1.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+#myNavbar {
+    margin-right: 20px;
+}
+.nav-link:hover {
+    transform:scale(1.2);
+    transition: 0.3s;
+}
+.nav-link.active {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0044ff, 0 0 40px #0044ff, 0 0 70px #0044ff, 0 0 80px #0044ff, 0 0 100px #0044ff, 0 0 150px #0044ff;
+    text-decoration:none;
+
+}
+
+
+/************************ HOME SECTION *********************************/
+#home {
+    min-height: 100vh;
+  }
+
+.home-title {
+    padding-left: 0 !important;
+    padding-top: 200px;
+    margin-bottom: 20px;
+    font-size: 70px;
+    text-align: center;
+}
+.name {
+    color: red;
+    display: inline-block;
+    line-height: 0.85 !important;
+    font-family: 'Tilt Neon';
+    animation: neon 0.5s ease-in-out infinite alternate;
+}
+
+.linkTree {
+    border:none;
+    padding: 7px;
+    border-radius: 10px;
+    background: #ff002f;
+    color: inherit;
+    font-weight: bold;
+}
+.linkTree:hover {
+    transform:scale(1.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/************************ ABOUT SECTION *********************************/
+#about {
+    min-height: 100vh;  
+}
+.about-content{
+    padding-top: 100px;
+    display: flex;
+}
+.page-title {
+    margin-bottom: 20px;
+    font-size: 70px;
+    text-align: center;
+}
+.subtitle p{
+    font-family:'Courier New', Courier, monospace;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 30px;
+    text-align: justify;
+    font-size: 20px;
+}
+.explore-more {
+    font-size: 30px;
+    font-family: 'Cedarville Cursive';
+}
+
+/************************ PROJECT SECTION *********************************/
+#project {
+    min-height: 100vh;  
+    display: flex;
+    align-items: center;
+}
+
+.project-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 33.33%;
+}
+.project img {
+    width: 90%;
+    height: 100%;
+    margin: 10%;
+    border-radius: 10px;
+}
+
+.project button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background:none;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000;
+}
+.project button:hover {
+    transform:scale(1.2);
+    transition: 0.3s;
+}
+
+/************************ SERVICE SECTION *********************************/
+#service {
+    min-height: 100vh;  
+    display: flex;
+    align-items: center;
+}
+
+/**************************** SKILLS******************** */           
+#skills {
+    min-height: 100vh;
+    padding-top: 100px;
+}
+.skills-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 200px;
+}
+.progress {
+    height: 40px !important;
+
+}
+.progressContainer {
+    width: 100%;
+    margin:20px;
+}
+.progressContainer i {
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: inherit;
+}
+
+.progressContainer span{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+/***************************** BLOG *********************/
+#blog {
+    min-height: 100vh;
+    text-align: justify;
+    margin: 100px;
+}
+#blog p {
+    text-indent: 50px;
+}
+#blog h1,
+#blog h2,
+#blog h3,
+#blog h4 {
+    color: #FF002F;
+}
+
+.backHome {
+    font-family:'Cedarville Cursive';
+}
+
+
+/*********************************** FOOTER************************** */
+footer {
+   height: fit-content;
+}
+footer a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+.social {
+    font-size: 30px;
+    margin: 10px;
+    border: none ;
+    background: none;
+}
+.fa-brands {
+    color: white;
+    
+}
+.fa-brands:hover {
+    transform:scale(1.2);
+    transition: 0.3s;
+}
+
+
+/**************************** DARK MODE ******************/
+.dark {
+    background-image: url('../image/black-chalk.jpg'), url('../image/raymund.jpeg');
+    background-blend-mode: multiply;
+    color: rgb(255, 255, 255);
+    .navbar {
+        background-image: linear-gradient(#000000,#ffffff48);
+        box-shadow: none;
+    };
+    #myNavbar a {
+        color: white;
+    };
+    #myNavbar .active {
+        color: rgb(245, 0, 0);
+        font-weight: bold;
+    };
+    .footer{
+        background-image: linear-gradient(rgba(184, 182, 182, 0.42),rgb(223, 4, 4));
+        color: #000;
+    };
+
+}
+.light {
+    background-image: url('../image/white-board.png'), url('../image/raymund.jpeg');
+    background-blend-mode:hard-light;
+    .navbar {
+        background-image: linear-gradient(#ffffff,#17171782);
+        box-shadow: none;
+    };
+    #myNavbar a {
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    };
+    .project button {
+        color: black;
+    };
+    #myNavbar .active {
+        color: white;
+    };
+    .footer {
+        background-image: linear-gradient(rgba(255, 0, 0, 0.42),rgba(0, 0, 0, 0.525));
+        color: rgb(255, 255, 255) ;
+    }
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 25px;
+}
+
+
+/************************************ NEON ****************************/
+@keyframes neon {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fc0000;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 70px #ff0000;
+    }
+}
+
+.redBG {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff0000 !important;
+}
+
+@media only screen and (max-width:1200px) {
+    .container {
+        padding: 0 !important;
+    }
+    .aboutPicture {
+        display: none !important;
+    }
+    .skills-content {
+        padding: 0;
+    }
+    #blog {
+        margin: 100px 0;
+    }
+}
+
+@media only screen and (max-width:900px) and (min-width:100px){
+    body {
+        width: 100vw !important;
+        padding: 0 !important;
+    }
+    .navbar {
+        width: 100vw;
+    }
+    .navbar-toggler {
+        margin: 0 12px !important;
+        border: none !important;
+    }
+    .navbar-toggler button {
+        border: none !important;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(185, 0, 0, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+        border-radius: 5px;
+        border: none !important;
+
+    }
+    .navbar-collapse {
+        display: flex;
+    }
+
+    .nav-link:hover {
+        transform:none;
+        transition: none;
+    }
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+    .container {
+        padding: 0 !important;
+    }
+    #home, #about,  #project{
+        min-height:fit-content !important;
+        width: 100vw;
+    }
+
+    .home-title {
+        padding-right: 0 !important;
+        padding-top: 80px;
+        width: 100%;
+        font-size: 30px;
+    }
+    .page-title {
+        font-size: 30px;
+    }
+    .linkTreeContainer {
+        width: 50%;
+        padding: 0 !important;
+    }
+    .linkTree {
+        width: 100%;
+    }
+
+/* ABOUT */
+
+    .about-content {
+        width: 100% !important;
+        padding: 0; 
+    }
+    .subtitle {
+        width: 100% !important;
+    }
+    .subtitle p {
+        font-size: 12px;
+    }
+    .aboutPicture img {
+        display: none;
+    }
+    #skills {
+        width: 100% !important;
+        padding: 0;
+    }
+    .skills-content {
+        padding: 0;
+        margin: 0;
+    }
+
+    #blog {
+        padding: 0 50px;
+    }
+
+    /* PROJECT */
+
+    .project-form{
+        padding: 20px;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project {
+        width: 33.33% !important;
+        padding: 5px;
+    }
+    .project img {
+       width: 100%;
+    }
+    .project-content h1 {
+        text-align: center;
+    }
+
+}
