@@ -63,6 +63,10 @@ body {
     font-size: 70px;
     text-align: center;
 }
+.home-subtitle {
+    font-size: 50px;
+    font-family:'Courier New', Courier, monospace;
+}
 .name {
     color: red;
     display: inline-block;
