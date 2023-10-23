@@ -320,7 +320,6 @@ footer a {
 
 @media only screen and (max-width:900px) and (min-width:100px){
     body {
-        width: 100vw !important;
         padding: 0 !important;
     }
     .navbar {
@@ -358,27 +357,30 @@ footer a {
     }
     #home, #about {
         min-height: 40vh;
-        width: 100vw;
+        max-width: 100vw;
     }
 
     .home-title {
-        padding-top: 80px;
+        padding: 80px 15px 0;
         width: 100%;
         font-size: 30px;
     }
     .home-subtitle {
         font-size:15px;
-        padding: 0 15px;
+        text-align: justify;
     }
     .page-title {
         font-size: 30px;
     }
     .linkTreeContainer {
-        width: 50%;
+        width: 100%;
         padding: 0 !important;
+        display: flex;
+        justify-content: center;
     }
     .linkTree {
-        width: 100%;
+        width: 30%;
+       
     }
 
 /* ABOUT */
@@ -392,6 +394,7 @@ footer a {
     }
     .subtitle p {
         font-size: 15px;
+        padding: 15px;
     }
     .aboutPicture img {
         display: none;
@@ -415,7 +418,7 @@ footer a {
         min-height: 50vh;
     }
     .project-form{
-        padding: 20px;
+        padding: 15px;
         width: 100vw;
         display: flex;
         flex-wrap: wrap;
