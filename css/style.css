@@ -198,6 +198,7 @@ body {
 }
 #blog p {
     text-indent: 50px;
+    font-family:'Courier New', Courier, monospace;
 }
 #blog h1,
 #blog h2,
