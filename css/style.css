@@ -194,6 +194,7 @@ body {
 #blog {
     min-height: 100vh;
     text-align: justify;
+    word-spacing:-2px;
     margin: 100px;
 }
 #blog p {
