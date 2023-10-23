@@ -362,13 +362,13 @@ footer a {
     }
 
     .home-title {
-        padding-right: 0 !important;
         padding-top: 80px;
         width: 100%;
         font-size: 30px;
     }
     .home-subtitle {
         font-size:15px;
+        padding: 0 15px;
     }
     .page-title {
         font-size: 30px;
@@ -391,7 +391,7 @@ footer a {
         width: 100% !important;
     }
     .subtitle p {
-        font-size: 12px;
+        font-size: 15px;
     }
     .aboutPicture img {
         display: none;
@@ -407,7 +407,7 @@ footer a {
     }
 
     #blog {
-        padding: 0 50px;
+        padding: 0 15px;
     }
 
     /* PROJECT */
