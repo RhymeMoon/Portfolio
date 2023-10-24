@@ -82,7 +82,7 @@ body {
     padding: 7px;
     border-radius: 10px;
     background: #ff002f;
-    color: inherit;
+    color: white;
     font-weight: bold;
 }
 .linkTree:hover {
@@ -245,7 +245,7 @@ footer a {
 
 /**************************** DARK MODE ******************/
 .dark {
-    background-image: url('../image/black-chalk.jpg'), url('../image/rhyme-moon-high-resolution-color-logo.png');
+    background-image: url('../image/logo-background-dark.png');
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -258,8 +258,7 @@ footer a {
     };
 
     #about {
-        background-image: url('../image/white-board.png'), url('../image/thumbnail.png');
-        background-blend-mode: hard-light;
+        background-image: url('../image/raymund-white.png');
         background-position:center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -282,15 +281,13 @@ footer a {
 }
 
 .light {
-    background-image: url('../image/white-board.png'), url('../image/rhyme-moon-high-resolution-color-logo.png');
-    background-blend-mode:hard-light;
+    background-image: url('../image/logo-white-background.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
     #about {
-        background-image:url('../image/thumbnail.png'), url('../image/brand-background.png');
-        background-blend-mode: multiply;
+        background-image: url('../image/raymund-black.png');
         background-position:center center;
         background-repeat: no-repeat, repeat;
         background-size: cover;
