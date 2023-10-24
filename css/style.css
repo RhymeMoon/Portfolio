@@ -425,7 +425,9 @@ footer a {
     }
 
 /* ABOUT */
-
+    #about {
+        background-size:contain;
+    }
     .about-content {
         width: 100% !important;
         padding: 0; 
