@@ -138,6 +138,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    border: 3px solid #ff002f !important;
     
 }
 
@@ -427,7 +428,7 @@ footer a {
     }
     .project {
         width: 100% !important;
-        height: 100% !important;
+        height: 100% !important;       
     }
     .project iframe {
         width: 100%;
