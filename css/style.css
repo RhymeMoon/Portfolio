@@ -26,6 +26,7 @@ body {
     position: fixed !important;
     top: 0;
     z-index: 99;
+   
 }
 .navbar-brand img {
     width: auto;
@@ -118,23 +119,25 @@ body {
 /************************ PROJECT SECTION *********************************/
 #project {
     min-height: 100vh;  
-    display: flex;
-    align-items: center;
+    margin-top: 15vh;
 }
 
 .project-form {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
 .project {
     width: 33.33%;
+    padding: 5px;
+    height: 650px;
 }
-.project img {
-    width: 90%;
+.project iframe {
+    width: 100%;
     height: 100%;
-    margin: 10%;
     border-radius: 10px;
+    
 }
 
 .project button {
@@ -416,21 +419,18 @@ footer a {
     }
 
     /* PROJECT */
-    #project {
-        min-height: 50vh;
-    }
     .project-form{
-        padding: 15px;
-        width: 100vw;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
     }
     .project {
-        width: 33.33% !important;
-        padding: 5px;
+        width: 100% !important;
+        height: 100% !important;
     }
-    .project img {
-       width: 100%;
+    .project iframe {
+        width: 100%;
+        height: 650px;
     }
     .project-content h1 {
         text-align: center;

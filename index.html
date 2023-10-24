@@ -21,25 +21,34 @@
 <body>
 <!-----------------------------------NAVIGATION BAR --------------------------------------->
     <header class="nav navbar navbar-expand-md">
-        <a class="navbar-brand" href="pages/index.html">
+        <a class="navbar-brand" href="index.html">
           <img src="image/black-transparent-logo.png">
         </a>
+        <ul style="padding: 5px; margin: 5px;">
+          <li style="list-style-type: none;">
+              <button id="theme-toggle"><i class="nav-link fa-solid fa-moon" style="color: #1A1A1A;"></i>
+              </button>
+          </li>
+      </ul>
         <button class="navbar-toggler">
           <span class="navbar-toggler-icon" data-bs-toggle="collapse" 
           data-bs-target="#myNavbar"></span>
         </button>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <button id="theme-toggle"><i class="nav-link fa-solid fa-moon" 
                                             style="color: #1A1A1A;"></i>
               </button>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a href="#home" class="top-menu nav-link active">Home</a>
             </li>
             <li class="nav-item">
               <a href="#about" class="top-menu nav-link ">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="project.html" class="top-menu nav-link ">Works</a>
             </li>
             <li class="nav-item">
               <a href="blog.html" class="top-menu nav-link ">Blog</a>
@@ -170,29 +179,6 @@
             </div>
         </section> <hr>
 
-<!----------------------------------- PROJECT SECTION ------------------->
-        <section id="project">
-            <div class="project-content">
-                <h1 class="fw-bolder"> 
-                    My Recent Works
-                </h1>
-                <form class="project-form" target="_blank">
-                    <div class="project" data-aos="fade-right">
-                        <img src="image/work1.jpg">
-                        <button type="submit" formaction="https://rhymemoon.github.io/Activity-4-Conversion-Calculator-with-JavaScript-Conditional-Statement-/">CLICK ME!</button>
-                    </div>      
-                    <div class="project" data-aos="fade-up">
-                      <img src="image/todo.jpg">
-                      <button type="submit" formaction="https://rhymemoon.github.io/TO-DO-LIST/">CLICK ME!</button>
-                    </div>
-                    <div class="project" data-aos="zoom-in">
-                      <img src="image/tic tac toe.jpg">
-                      <button type="submit" formaction="https://rhymemoon.github.io/TIC-TAC-TOE/">CLICK ME!</button>
-                    </div>
-                  </form>
-            </div>
-        </section>
-        <hr>
 <!----------------------------------- END OF CONTAINER -------------------->
     </div>
 
