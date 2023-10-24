@@ -422,6 +422,7 @@ footer a {
     .about-content {
         width: 100% !important;
         padding: 0; 
+        margin: 0;
     }
     .subtitle {
         width: 100% !important;
