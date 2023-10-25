@@ -54,7 +54,7 @@ body {
 
 /************************ HOME SECTION *********************************/
 #home {
-    min-height: 80vh;
+    min-height: 100vh;
   }
 
 .home-title {
@@ -65,8 +65,11 @@ body {
     text-align: center;
 }
 .home-subtitle {
-    font-size: 50px;
+    font-size: 30px;
     font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    
 }
 .name {
     color: red;
@@ -112,11 +115,9 @@ body {
     padding: 0 30px;
     text-align: justify;
     font-size: 30px;
+    font-weight: bold;
 }
-.explore-more {
-    font-size: 30px;
-    font-family: 'Cedarville Cursive';
-}
+
 
 /************************ PROJECT SECTION *********************************/
 #project {
@@ -199,12 +200,13 @@ body {
 /***************************** BLOG *********************/
 #blog {
     min-height: 100vh;
-    text-align: justify;
-    word-spacing:-2px;
     margin: 100px;
 }
 #blog p {
     font-family:'Courier New', Courier, monospace;
+    font-size: 18px; 
+    text-align: justify;
+    font-weight:600; 
 }
 #blog h1,
 #blog h2,
@@ -404,9 +406,12 @@ footer a {
     }
     .home-subtitle {
         font-size:15px;
-        text-align: justify;
+        text-align: center;
         word-spacing: -3px;
         word-wrap: break-word;
+        font-family:'Courier New', Courier, monospace;
+        padding: 0 15px;
+        font-weight: bold;
        
     }
     .page-title {
@@ -421,6 +426,7 @@ footer a {
     }
     .linkTree {
         width: 30%;
+        font-size: 12px;
        
     }
 
@@ -441,6 +447,7 @@ footer a {
         margin: 0;
         word-spacing: -3px;
         padding-bottom: 20px;
+        font-weight: lighter;
     }
     .aboutPicture img {
         display: none;
@@ -457,6 +464,13 @@ footer a {
 
     #blog {
         padding: 0 15px;
+    }
+    #blog p {
+        text-align: justify;
+        word-wrap: break-word;
+        word-spacing: -2;
+        font-size: 16px;
+
     }
 
     /* PROJECT */
@@ -488,6 +502,41 @@ footer a {
     }
     .progress {
         height: 20px !important;
+    }
+    .light {
+        background-size: 100vw 50vh;
+        background-position: top;
+        #about {
+            background-image: url('../image/raymund-dark-portrait.png');
+            background-position: center center;
+            };
+        #blog, #project {
+            background-image: url('../image/logo-white-background.png');
+            background-position: top;
+            margin-top: 0;
+            padding-top: 90px;
+            background-attachment:fixed;
+            background-repeat: repeat-y;
+            background-size: 100vw;
+            }
+
+    }
+    .dark {
+        background-size: 100vw 50vh;
+        background-position: top;
+        #about {
+            background-image: url('../image/raymund-white-portrait.png');
+            background-position: center center;
+            }
+        #blog, #project {
+            background-image: url('../image/logo-background-dark.png');
+            background-position: top;
+            margin-top: 0;
+            padding-top: 90px;
+            background-attachment:fixed;
+            background-repeat: repeat-y;
+            background-size: 100vw;
+            }
     }
 
 }
