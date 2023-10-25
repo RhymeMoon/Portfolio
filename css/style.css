@@ -528,7 +528,7 @@ footer a {
             background-image: url('../image/raymund-white-portrait.png');
             background-position: center center;
             }
-        #blog, #project {
+        #blog, #project, #skills {
             background-image: url('../image/logo-background-dark.png');
             background-position: top;
             margin-top: 0;
