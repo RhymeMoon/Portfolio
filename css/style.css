@@ -168,7 +168,7 @@ body {
 /**************************** SKILLS******************** */           
 #skills {
     min-height: 100vh;
-    padding-top: 100px;
+    padding: 100px 0;
 }
 .skills-content {
     display: flex;
@@ -178,11 +178,11 @@ body {
     padding: 0 200px;
 }
 .progress {
-    height: 40px !important;
+    height: 20px !important;
 
 }
 .progressContainer {
-    width: 100%;
+    width: 50%;
     margin:20px;
 }
 .progressContainer i {
@@ -192,7 +192,7 @@ body {
 }
 
 .progressContainer span{
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 100;
 }
@@ -472,7 +472,11 @@ footer a {
         font-size: 16px;
 
     }
+/* skills */
 
+#skills {
+    padding: 15px 0 !important;
+}
     /* PROJECT */
     .project-form{
         display: flex;
