@@ -371,6 +371,9 @@ footer a {
     }
     .navbar {
         width: 100vw;
+        height: fit-content;
+        transition: .5s;
+        
     }
     .navbar-toggler {
         margin: 0 12px !important;
@@ -387,6 +390,7 @@ footer a {
     }
     .navbar-collapse {
         display: flex;
+        
     }
 
     .nav-link:hover {
@@ -523,38 +527,26 @@ footer a {
         height: 20px !important;
     }
     .light {
+        background-image: url('../image/logo-white-background.png');
         background-size: 100vw 50vh;
         background-position: top;
+        background-attachment:fixed;
+        background-repeat: repeat-y;
         #about {
             background-image: url('../image/raymund-dark-portrait.png');
             background-position: center center;
-            };
-        #blog, #project {
-            background-image: url('../image/logo-white-background.png');
-            background-position: top;
-            margin-top: 0;
-            padding-top: 90px;
-            background-attachment:fixed;
-            background-repeat: repeat-y;
-            background-size: 100vw;
             }
 
     }
     .dark {
+        background-image: url('../image/logo-background-dark.png');
         background-size: 100vw 50vh;
         background-position: top;
+        background-attachment:fixed;
+        background-repeat: repeat-y;
         #about {
             background-image: url('../image/raymund-white-portrait.png');
             background-position: center center;
-            }
-        #blog, #project, #skills {
-            background-image: url('../image/logo-background-dark.png');
-            background-position: top;
-            margin-top: 0;
-            padding-top: 90px;
-            background-attachment:fixed;
-            background-repeat: repeat-y;
-            background-size: 100vw;
             }
     }
 
