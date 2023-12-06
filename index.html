@@ -1,259 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta property="og:image:url" content="https://www.rhymemoon.site" />
-    <meta property="og:description" content="I'm a Front-end Web Developer, specializing in website and graphic design. I'm a proactive guy with a strong passion and a ton of reliability. I absorb knowledge eagerly and firmly believe in the value of hard work. My main objective? To master web development." />
-    <meta property="og:url"content="https://www.rhymemoon.site" />
-    <meta property="og:title" content="Rhymemoon.site" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Front-End Web Developer" />
+    <meta
+      property="og:description"
+      content="I'm a Front-end Web Developer, specializing in website and graphic design. I'm a proactive guy with a strong passion and a ton of reliability. I absorb knowledge eagerly and firmly believe in the value of hard work. My main objective? To master web development."
+    />
+    <meta property="og:url" content="https://www.rhymemoon.site" />
+    <meta
+      property="og:image"
+      content="https://rhymemoon.site/image/raymund.jpeg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/header_logo.png" type="image/x-icon" />
     <title>RhymeMoon</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <script src="https://kit.fontawesome.com/4548233bbc.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<!-----------------------------------NAVIGATION BAR --------------------------------------->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/4548233bbc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-----------------------------------NAVIGATION BAR --------------------------------------->
     <header class="nav navbar navbar-expand-md">
-        <a class="navbar-brand" href="pages/index.html">
-          <img src="image/black-transparent-logo.png">
-        </a>
-        <button class="navbar-toggler">
-          <span class="navbar-toggler-icon" data-bs-toggle="collapse" 
-          data-bs-target="#myNavbar"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <button id="theme-toggle"><i class="nav-link fa-solid fa-moon" 
-                                            style="color: #1A1A1A;"></i>
-              </button>
-            </li>
-            <li class="nav-item">
-              <a href="#home" class="top-menu nav-link active">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="top-menu nav-link ">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="top-menu nav-link ">Blog</a>
-            </li>
-          </ul>   
-        </div>  
-      </header>
+      <a class="navbar-brand" href="index.html">
+        <img src="image/black-transparent-logo.png" />
+      </a>
+      <ul style="padding: 5px; margin: 5px">
+        <li style="list-style-type: none">
+          <button id="theme-toggle">
+            <i class="nav-link fa-solid fa-moon" style="color: #1a1a1a"></i>
+          </button>
+        </li>
+      </ul>
+      <button class="navbar-toggler">
+        <span
+          class="navbar-toggler-icon"
+          data-bs-toggle="collapse"
+          data-bs-target="#myNavbar"
+        ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#home" class="top-menu nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="top-menu nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="project.html" class="top-menu nav-link">Works</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="top-menu nav-link">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <div class="container">
-<!-----------------------------------HOME SECTION ----------------------------------------->
-        <section id="home">
-            <div class="home-content" >
-              <h1 class="home-title" data-aos="fade-right">
-                Hi, I'm <span class="name fw-bolder">RAYMUND</span>. <br>
-              </h1>
-              <p><span class="home-subtitle">Hi, I'm Raymund, a web designer who loves creating beautiful and user-friendly interfaces. Welcome to my portfolio website, where design and functionality come together.</span></p>
-              <form target="_blank" data-aos="fade-left" class="linkTreeContainer">
-                <button class="linkTree" type="submit" formaction="https://dotcal.co/rhymemoon">Lets Connect!</button>
-              </form>
-            </div>
-        </section>
-        <hr>
-<!----------------------------------- ABOUT SECTION ------------------->
-        <section id="about">
-            <div class="about-content">
-                <div class="subtitle">
-                    <h1 class="page-title" data-aos="flip-left"
-                                            data-aos-easing="ease-out-cubic"
-                                            data-aos-duration="2000">
-                        WHO AM I?
-                    </h1>
-                    <div class="subtitle" data-aos="fade-right"
-                    data-aos-duration="3000">
-                        <p>I'm a <span class="fw-bold redBG">Front-end Web Developer</span>, specializing in website and graphic design. I'm known for my creative thinking and love taking on new challenges. Nowadays, a strong online presence is vital for any business or organization. Without a skilled web developer, many turn to generic tools like Squarespace or WordPress templates. But for a truly unique and engaging online experience, companies often turn to web developers or teams like mine.</p>
-                        <p> I'm a proactive guy with a strong passion and a ton of reliability. Time management? Absolutely on point. I absorb knowledge eagerly and firmly believe in the value of hard work. I'm a team player, but I also excel in solo missions. Need someone to lend an ear or tackle problem-solving? I'm your guy. And when it comes to staying organized, I'm your go-to organizational expert. My main objective? To master web development.</p>
-                  </div>
-                     
-                </div>
-                <div class="aboutPicture" data-aos="zoom-in" data-aos-duration="2000">
-                    <img src="image/with_hlmt.png" alt="My Picture">
-                </div>
-            </div>
-        <div class="explore-more" data-aos="zoom-in" data-aos-duration="2000">
-            Explore Further <br>
-            <i class="fa-solid fa-chevron-down" style="margin-left: 100px;"></i>
-        </div>
-        </section> 
-        
-        <hr>
-
-<!------------------------------------ SKILLS --------------------------->
-        <section id="skills">
-          <h1 class="page-title">
-            Skill Set
+      <!-----------------------------------HOME SECTION ----------------------------------------->
+      <section id="home">
+        <div class="home-content">
+          <h1 class="home-title" data-aos="zoom-in">
+            Hi, I'm <span class="name fw-bolder">RAYMUND</span>. <br />
           </h1>
+          <p class="home-subtitle">
+            A web developer who loves creating beautiful and user-friendly
+            interfaces. Welcome to my portfolio website, where design and
+            functionality come together.
+          </p>
+          <form target="_blank" data-aos="fade-left" class="linkTreeContainer">
+            <button
+              class="linkTree"
+              type="submit"
+              formaction="https://dotcal.co/rhymemoon"
+            >
+              Lets Connect!
+            </button>
+          </form>
+        </div>
+      </section>
 
-            <div class="skills-content" >
-
-              <div class="progressContainer">
-                <span>
-                  <i class="fa-brands fa-html5" data-aos="fade-right" data-aos-duration="2000"> <span>HTML</span></i>
-                </span>
-                <div class="progress" data-aos="fade-left" data-aos-duration="2000">
-                    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                      in progress
-                    </div>
-                </div>
-              </div>
-
-              <div class="progressContainer">
-                <span>
-                  <i class="fa-brands fa-css3-alt" data-aos="fade-right" data-aos-duration="2000"><span> CSS</span></i>
-                </span>
-                <div class="progress" data-aos="fade-left" data-aos-duration="2000">
-                    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 85%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                      in progress
-                    </div>
-                </div>
-              </div>
-
-              <div class="progressContainer">
-                <span>
-                  <i class="fa-brands fa-bootstrap" data-aos="fade-right" data-aos-duration="2000"><span> BOOTSTRAP</span></i>
-                  
-                </span>
-                <div class="progress" data-aos="fade-left" data-aos-duration="2000">
-                    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 80%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                      in progress
-                    </div>
-                </div>
-              </div>
-
-              <div class="progressContainer">
-                <span>
-                  <i class="fa-solid fa-file-code" data-aos="fade-right" data-aos-duration="2000"><span> Video Editing</span></i>
-                </span>
-                <div class="progress" data-aos="fade-left" data-aos-duration="2000">
-                    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 80%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                      in progress
-                    </div>
-                </div>
-              </div>
-
-              <div class="progressContainer">
-                <span>
-                  <i class="fa-brands fa-js" data-aos="fade-right" data-aos-duration="2000"><span> Javascript</span></i>
-                </span>
-                <div class="progress" data-aos="fade-left" data-aos-duration="2000">
-                    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 50%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                      in progress
-                    </div>
-                </div>
-              </div>
-
-              <div class="progressContainer">
-                <span>
-                  <i class="fa-solid fa-file-code" data-aos="fade-right" data-aos-duration="2000"> <span>Photoshop</span></i>
-                </span>
-                <div class="progress" data-aos="fade-left" data-aos-duration="2000">
-                    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 50%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                      in progress
-                    </div>
-                </div>
-              </div>
-              
-              
-
-            </div>
-        </section> <hr>
-
-<!----------------------------------- PROJECT SECTION ------------------->
-        <section id="project">
-            <div class="project-content">
-                <h1 class="fw-bolder"> 
-                    My Recent Works
-                </h1>
-                <form class="project-form" target="_blank">
-                    <div class="project" data-aos="fade-right">
-                        <img src="image/work1.jpg">
-                        <button type="submit" formaction="https://rhymemoon.github.io/Activity-4-Conversion-Calculator-with-JavaScript-Conditional-Statement-/">CLICK ME!</button>
-                    </div>      
-                    <div class="project" data-aos="fade-up">
-                      <img src="image/todo.jpg">
-                      <button type="submit" formaction="https://rhymemoon.github.io/TO-DO-LIST/">CLICK ME!</button>
-                    </div>
-                    <div class="project" data-aos="zoom-in">
-                      <img src="image/tic tac toe.jpg">
-                      <button type="submit" formaction="https://rhymemoon.github.io/TIC-TAC-TOE/">CLICK ME!</button>
-                    </div>
-                  </form>
-            </div>
-        </section>
-        <hr>
-
-<!----------------------------------- SERVICE SECTION ------------------->
-        <!-- <section id="service">
-            <div class="service-content">
-                <header>
-                    <h1>Front-End Web Developer Services</h1>
-                </header>
-                <section class="services">
-                    <div class="service">
-                        <h2>Website Design</h2>
-                        <p>We create stunning and user-friendly website designs tailored to your brand's needs.</p>
-                    </div>
-                    <div class="service">
-                        <h2>Responsive Development</h2>
-                        <p>Your website will look great on all devices, from smartphones to desktops.</p>
-                    </div>
-                    <div class="service">
-                        <h2>Optimization</h2>
-                        <p>We optimize your website for performance, speed, and SEO.</p>
-                    </div>
-                </section>
-            
-            </div>
-        </section>
-        <hr> -->
-
-<!----------------------------------- END OF CONTAINER -------------------->
+      <!----------------------------------- END OF CONTAINER -------------------->
     </div>
+    <!----------------------------------- ABOUT SECTION ------------------->
+    <section id="about">
+      <div class="about-content">
+        <div class="subtitle">
+          <h1
+            class="page-title"
+            data-aos="zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            WHO AM I?
+          </h1>
+          <div class="subtitle" data-aos="zoom-in" data-aos-duration="3000">
+            <p>
+              I'm a self-taught<span class="fw-bold redBG">
+                Front-end Web Developer</span
+              >, and I specialize in creating websites that look good and work
+              well. I use HTML, CSS, and Javascript for this. I really enjoy
+              what I do, and I'm always up for a new challenge. <br /><br />
 
+              In today's world, it's important for businesses and organizations
+              to have a good website. Some people use easy website builders like
+              Squarespace or WordPress, but I believe in making websites that
+              are unique and interesting. I'm good at managing my time, and I
+              like to learn new things. I work well on my own or as part of a
+              team, and I'm good at solving problems. I'm also good at staying
+              organized and keeping things in order. My main goal is to get
+              really good at web development, and I'm always trying to learn and
+              get better at it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------------------ SKILLS --------------------------->
+    <section id="skills">
+      <h1 class="page-title">Skill Set</h1>
 
+      <div class="skills-content">
+        <div class="progressContainer">
+          <span>
+            <i class="fa-brands fa-html5"> <span>HTML</span></i>
+          </span>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-danger progress-bar-animated"
+              role="progressbar"
+              style="width: 90%"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              in progress
+            </div>
+          </div>
+        </div>
 
-<!-- --------------------------------------FOOTER----------- ------------->
-<footer class="footer text-center">
-<!----------------------------------- SOCIAL MEDIA ICONS ------------------>
-<form target="_blank" class="social-container">
-  <button class="social " type="submit" formaction="https://www.facebook.com/profile.php?id=100000688405190">
-    <i class="fa-brands fa-facebook"></i>
-  </button>
-  <button class="social" type="submit" formaction="https://www.linkedin.com/in/raymund-aban-54a685168/">
-    <i class="fa-brands fa-linkedin"></i>
-  </button>
-  <button class="social " type="submit" formaction="https://twitter.com/raymundaban">
-    <i class="fa-brands fa-twitter"></i>
-  </button>
-</form>
+        <div class="progressContainer">
+          <span>
+            <i class="fa-brands fa-css3-alt"><span> CSS</span></i>
+          </span>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-danger progress-bar-animated"
+              role="progressbar"
+              style="width: 85%"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              in progress
+            </div>
+          </div>
+        </div>
 
-  <div class=" footer-content text-center p-3">
-    <img id="footer-logo" src="image/black-transparent-logo.png" height="25px" alt="">
-      © 2023
-      <a href="https://linktr.ee/rhymemoon">RhymeMoon</a>
-  </div>
+        <div class="progressContainer">
+          <span>
+            <i class="fa-brands fa-bootstrap"><span> BOOTSTRAP</span></i>
+          </span>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-danger progress-bar-animated"
+              role="progressbar"
+              style="width: 80%"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              in progress
+            </div>
+          </div>
+        </div>
 
-</footer>
+        <div class="progressContainer">
+          <span>
+            <i class="fa-solid fa-file-code"><span> Video Editing</span></i>
+          </span>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-danger progress-bar-animated"
+              role="progressbar"
+              style="width: 80%"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              in progress
+            </div>
+          </div>
+        </div>
 
+        <div class="progressContainer">
+          <span>
+            <i class="fa-brands fa-js"><span> Javascript</span></i>
+          </span>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-danger progress-bar-animated"
+              role="progressbar"
+              style="width: 50%"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              in progress
+            </div>
+          </div>
+        </div>
 
+        <div class="progressContainer">
+          <span>
+            <i class="fa-solid fa-file-code"> <span>Photoshop</span></i>
+          </span>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-danger progress-bar-animated"
+              role="progressbar"
+              style="width: 50%"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              in progress
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script src="Javascript/javascript.js"></script>
-<!-- ------------------AOS Implementation------------ -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    mirror: false,
-    once: true
-  });
-</script>
-</body>
+    <!-- --------------------------------------FOOTER----------- ------------->
+    <footer class="footer text-center">
+      <!----------------------------------- SOCIAL MEDIA ICONS ------------------>
+      <form target="_blank" class="social-container">
+        <button
+          class="social"
+          type="submit"
+          formaction="https://www.facebook.com/profile.php?id=100000688405190"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </button>
+        <button
+          class="social"
+          type="submit"
+          formaction="https://www.linkedin.com/in/raymund-aban-54a685168/"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </button>
+        <button
+          class="social"
+          type="submit"
+          formaction="https://twitter.com/raymundaban"
+        >
+          <i class="fa-brands fa-twitter"></i>
+        </button>
+      </form>
+
+      <div class="footer-content text-center p-3">
+        <img
+          id="footer-logo"
+          src="image/black-transparent-logo.png"
+          height="25px"
+          alt=""
+        />
+        © 2023
+        <a href="https://linktr.ee/rhymemoon"
+          >Raymund Aban | Powered by Raymund Aban</a
+        >
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Javascript/javascript.js"></script>
+    <!-- ------------------AOS Implementation------------ -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        mirror: false,
+        once: true,
+      });
+    </script>
+  </body>
 </html>
