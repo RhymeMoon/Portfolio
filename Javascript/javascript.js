@@ -44,3 +44,21 @@ function toggleTheme() {
 // Add an event listener to the theme toggle button
 themeToggle.addEventListener('click', toggleTheme);
 
+document.addEventListener("DOMContentLoaded", function () {
+  removeComments(document.body);
+});
+
+
+//       COMMENT REMOVER
+function removeComments(element) {
+  for (let i = element.childNodes.length - 1; i >= 0; i--) {
+    let node = element.childNodes[i];
+    if (node.nodeType === 8) {
+      // Comment node type
+      element.removeChild(node);
+    } else if (node.nodeType === 1) {
+      // Element node type
+      removeComments(node); // Recursively remove comments in child elements
+    }
+  }
+}
